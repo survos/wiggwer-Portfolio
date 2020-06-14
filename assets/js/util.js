@@ -1,7 +1,9 @@
+import $ from 'jquery';
+
 (function($) {
 
 	/**
-	 * Generate an indented list of links from a nav. Meant for use with panel().
+	 * Generate an indented list of links from a navbar. Meant for use with panel().
 	 * @return {jQuery} jQuery object.
 	 */
 	$.fn.navList = function() {

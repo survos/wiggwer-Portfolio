@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 /*
 	Massively by HTML5 UP
 	html5up.net | @ajlkn
@@ -10,7 +12,7 @@
 		$body = $('body'),
 		$wrapper = $('#wrapper'),
 		$header = $('#header'),
-		$nav = $('#nav'),
+		$nav = $('#navbar'),
 		$main = $('#main'),
 		$navPanelToggle, $navPanel, $navPanelInner;
 
@@ -145,8 +147,8 @@
 		// Panel.
 			$navPanel = $(
 				'<div id="navPanel">' +
-					'<nav>' +
-					'</nav>' +
+					'<navbar>' +
+					'</navbar>' +
 					'<a href="#navPanel" class="close"></a>' +
 				'</div>'
 			)
@@ -163,9 +165,9 @@
 				});
 
 			// Get inner.
-				$navPanelInner = $navPanel.children('nav');
+				$navPanelInner = $navPanel.children('navbar');
 
-			// Move nav content on breakpoint change.
+			// Move navbar content on breakpoint change.
 				var $navContent = $nav.children();
 
 				breakpoints.on('>medium', function() {
