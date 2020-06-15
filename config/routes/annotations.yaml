@@ -1,9 +1,5 @@
-#controllers:
-#    resource: ../../src/Action/
-#    type: annotation
-
 controllers:
-    resource: ../../src/UI/Action/
+    resource: ../../src/Controller/
     type: annotation
 
 kernel:
