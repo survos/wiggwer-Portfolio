@@ -22,6 +22,7 @@ import '../vendor/owl.carousel/owl.carousel.min.js';
 import '../vendor/isotope-layout/isotope.pkgd.min.js';
 import '../vendor/venobox/venobox.min.js';
 import '../js/main.js';
+import '../js/title.js';
 
 $(document).ready(function() {
     $('[data-toggle="popover"]').popover();

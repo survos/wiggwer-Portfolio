@@ -183,6 +183,42 @@ h1, h2, h3, h4, h5, h6 {
         content: "\ea9d";
     }
 }
+/*--------------------------------------------------------------
+# Title
+--------------------------------------------------------------*/
+.titleElement {
+    /*opacity: 0;
+    max-width: 320px;
+    font-weight: 300;
+    font-size: 50px;
+    text-transform: uppercase;*/
+}
+
+.titleElement strong {
+    font-weight: black;
+}
+
+.titleElement span {
+    display: inline-block;
+    /*overflow: hidden;*/
+    line-height: 0.8;
+}
+
+.titleElement span span {
+    display: block;
+    animation: titleReveal .5s both;
+}
+
+@keyframes titleReveal {
+    from {
+        opacity: 0; 
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* Mobile Navigation */
 .mobile-nav-toggle {
@@ -622,9 +658,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# My Services
+# My Competences
 --------------------------------------------------------------*/
-.services .icon-box {
+.competences .icon-box {
     padding: 30px;
     position: relative;
     overflow: hidden;
@@ -635,7 +671,7 @@ section {
     border: 1px solid #fff;
 }
 
-.services .icon {
+.competences .icon {
     margin: 0 auto 20px auto;
     padding-top: 17px;
     display: inline-block;
@@ -643,38 +679,38 @@ section {
     border-radius: 50%;
     width: 72px;
     height: 72px;
-    background: #fff4df;
+    background: #6E9971/*#fff4df*/;
 }
 
-.services .icon i {
+.competences .icon i {
     font-size: 36px;
     line-height: 1;
-    color: #ffb727;
+    color: #305032;
 }
 
-.services .title {
+.competences .title {
     font-weight: 700;
     margin-bottom: 15px;
     font-size: 18px;
 }
 
-.services .title a {
+.competences .title a {
     color: #111;
     transition: 0.3s;
 }
 
-.services .description {
+.competences .description {
     font-size: 15px;
     line-height: 28px;
     margin-bottom: 0;
 }
 
-.services .icon-box:hover {
-    border-color: #ffb727;
+.competences .icon-box:hover {
+    border-color: #305032;
 }
 
-.services .icon-box:hover .title a {
-    color: #ffb727;
+.competences .icon-box:hover .title a {
+    color: #305032;
 }
 
 /*--------------------------------------------------------------
@@ -804,8 +840,8 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-    color: #f3a200;
-    border-color: #ffb727;
+    color: #305032;
+    border-color: #6E9971;
 }
 
 .portfolio .portfolio-item {
@@ -993,10 +1029,10 @@ section {
 
 .contact .info-box i.bx {
     font-size: 24px;
-    color: #ffb727;
+    color: #305032;
     border-radius: 50%;
     padding: 15px;
-    background: #fff6e4;
+    background: #6E9971;
 }
 
 .contact .info-box h3 {
