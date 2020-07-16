@@ -138,7 +138,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-6">
                         <h3 class="resume-title">Résumé</h3>
                         <div class="resume-item pb-0">
                             <h4>Jérôme Sauvage</h4>
@@ -192,6 +192,7 @@
                                 Cette certification m'a ouvert les portes de la programmation web et m'a initié au métier de webmaster.
                             </p>
                         </div>
+                         <div class="collapse" id="collapseExample">
                          <div class="resume-item">
                             <h4>Administration et Maintenance Windows Server 2003</h4>
                             <h5>2009</h5>
@@ -219,12 +220,22 @@
                                 m'a permi d'appréhender les principes du marketing et de l'économie. 
                             </p>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
+                        </div>
+                        <button class="btn btn-primary" 
+                                type="button" 
+                                data-toggle="collapse" 
+                                data-target="#collapseExample" 
+                                aria-expanded="false" 
+                                aria-controls="collapseExample">
+                                En voir plus
+                        </button>
+                </div>
+                
+                    <div class="col-lg-6">
                         <h3 class="resume-title">Expérience professionnelle</h3>
                         <div class="resume-item">
                             <h4>Informaticien / Développeur web</h4>
-                            <h5>2009 - A ce jour</h5>
+                            <h5>2009 - </h5>
                             <p><em>Escg Paris, Paris</em></p>
                             <p>
                             <h6>Développeur web</h6>
@@ -421,91 +432,41 @@
                 <div class="row portfolio-container">
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-img"><img src="{{ asset('build/images/portfolio/blog.png') }}" class="img-fluid" alt="Mon blog"></div>
                         <div class="portfolio-info">
-                            <h4>App 1</h4>
-                            <p>App</p>
-                            <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+                            <h4>Blog</h4>
+                            <p>Mon blog</p>
+                            <a href="{{ asset('build/images/portfolio/blog.png') }}" data-gall="portfolioGallery" class="venobox preview-link" title="Mon blog"><i class="bx bx-plus"></i></a>
                             <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-img"><img src="{{ asset('build/images/portfolio/chalet_et_caviar.png') }}" class="img-fluid" alt=""></div>
                         <div class="portfolio-info">
-                            <h4>Web 3</h4>
-                            <p>Web</p>
-                            <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+                            <h4>Chalet et Caviar</h4>
+                            <p>Site web d'une agence immoblière</p>
+                            <a href="{{ asset('build/images/portfolio/chalet_et_caviar.png') }}" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
                             <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-img"><img src="{{ asset('build/images/portfolio/Snowtrick_Accueil.png') }}" class="img-fluid" alt=""></div>
                         <div class="portfolio-info">
-                            <h4>App 2</h4>
-                            <p>App</p>
-                            <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+                            <h4>Snowtricks</h4>
+                            <p>Site communautaire sur le snowboard</p>
+                            <a href="{{ asset('build/images/portfolio/Snowtrick_Accueil.png') }}" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
                             <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-img"><img src="{{ asset('build/images/portfolio/Accueil_Le_Souvenir_Franco_Polonais.png') }}" class="img-fluid" alt=""></div>
                         <div class="portfolio-info">
-                            <h4>Card 2</h4>
-                            <p>Card</p>
-                            <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
-                        <div class="portfolio-info">
-                            <h4>Web 2</h4>
-                            <p>Web</p>
-                            <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
-                        <div class="portfolio-info">
-                            <h4>App 3</h4>
-                            <p>App</p>
-                            <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
-                        <div class="portfolio-info">
-                            <h4>Card 1</h4>
-                            <p>Card</p>
-                            <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
-                        <div class="portfolio-info">
-                            <h4>Card 3</h4>
-                            <p>Card</p>
-                            <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
-                        <div class="portfolio-info">
-                            <h4>Web 3</h4>
-                            <p>Web</p>
-                            <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+                            <h4>Le Souvenir Franco-Polonais</h4>
+                            <p>Site de l'association</p>
+                            <a href="{{ asset('build/images/portfolio/Accueil_Le_Souvenir_Franco_Polonais.png') }}" data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
                             <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
                         </div>
                     </div>
@@ -517,91 +478,71 @@
         <!-- End My Portfolio Section -->
 
         <!-- ======= Pricing Section ======= -->
-{#        <section id="pricing" class="pricing">#}
-{#            <div class="container">#}
+        <section id="pricing" class="tool">
+      <div class="container">
 
-{#                <div class="section-title">#}
-{#                    <span>Pricing</span>#}
-{#                    <h2>Pricing</h2>#}
-{#                    <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>#}
-{#                </div>#}
+        <div class="section-title">
+          <span>Maîtrise des outils</span>
+          <h2>Maîtrise des outils</h2>
+          <p></p>
+        </div>
 
-{#                <div class="row">#}
+        <div class="row">
 
-{#                    <div class="col-lg-3 col-md-6">#}
-{#                        <div class="box">#}
-{#                            <h3>Free</h3>#}
-{#                            <h4><sup>$</sup>0<span> / month</span></h4>#}
-{#                            <ul>#}
-{#                                <li>Aida dere</li>#}
-{#                                <li>Nec feugiat nisl</li>#}
-{#                                <li>Nulla at volutpat dola</li>#}
-{#                                <li class="na">Pharetra massa</li>#}
-{#                                <li class="na">Massa ultricies mi</li>#}
-{#                            </ul>#}
-{#                            <div class="btn-wrap">#}
-{#                                <a href="#" class="btn-buy">Buy Now</a>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
+          <div class="col-lg-4 col-md-6">
+            <div class="box featured">
+              <h3>Logiciels</h3>
+              <h4></h4>
+              <ul>
+                <li>Windows server, 7,8,10</li>
+                <li>Linux</li>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>Suite JetBrains</li>
+              </ul>
+              <div class="btn-wrap">
+                <a></a>
+              </div>
+            </div>
+          </div>
 
-{#                    <div class="col-lg-3 col-md-6 mt-4 mt-md-0">#}
-{#                        <div class="box featured">#}
-{#                            <h3>Business</h3>#}
-{#                            <h4><sup>$</sup>19<span> / month</span></h4>#}
-{#                            <ul>#}
-{#                                <li>Aida dere</li>#}
-{#                                <li>Nec feugiat nisl</li>#}
-{#                                <li>Nulla at volutpat dola</li>#}
-{#                                <li>Pharetra massa</li>#}
-{#                                <li class="na">Massa ultricies mi</li>#}
-{#                            </ul>#}
-{#                            <div class="btn-wrap">#}
-{#                                <a href="#" class="btn-buy">Buy Now</a>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="box featured">
+              <h3>Langages</h3>
+              <h4></h4>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Javascript</li>
+                <li>PHP</li>
+                <li>MySql</li>
+              </ul>
+              <div class="btn-wrap">
+                <a></a>
+              </div>
+            </div>
+          </div>
 
-{#                    <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">#}
-{#                        <div class="box">#}
-{#                            <h3>Developer</h3>#}
-{#                            <h4><sup>$</sup>29<span> / month</span></h4>#}
-{#                            <ul>#}
-{#                                <li>Aida dere</li>#}
-{#                                <li>Nec feugiat nisl</li>#}
-{#                                <li>Nulla at volutpat dola</li>#}
-{#                                <li>Pharetra massa</li>#}
-{#                                <li>Massa ultricies mi</li>#}
-{#                            </ul>#}
-{#                            <div class="btn-wrap">#}
-{#                                <a href="#" class="btn-buy">Buy Now</a>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
+         <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="box featured">
+              <h3>Framework / CMS</h3>
+              <h4></h4>
+              <ul>
+                <li>Symfony</li>
+                <li>Bootstrap</li>
+                <li>Jquery</li>
+                <li>Wordpress</li>
+              </ul>
+              <div class="btn-wrap">
+                <a></a>
+              </div>
+            </div>
+          </div>   
+        </div>
 
-{#                    <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">#}
-{#                        <div class="box">#}
-{#                            <span class="advanced">Advanced</span>#}
-{#                            <h3>Ultimate</h3>#}
-{#                            <h4><sup>$</sup>49<span> / month</span></h4>#}
-{#                            <ul>#}
-{#                                <li>Aida dere</li>#}
-{#                                <li>Nec feugiat nisl</li>#}
-{#                                <li>Nulla at volutpat dola</li>#}
-{#                                <li>Pharetra massa</li>#}
-{#                                <li>Massa ultricies mi</li>#}
-{#                            </ul>#}
-{#                            <div class="btn-wrap">#}
-{#                                <a href="#" class="btn-buy">Buy Now</a>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-
-{#                </div>#}
-
-{#            </div>#}
-{#        </section>#}
-        <!-- End Pricing Section -->
+      </div>
+    </section>
+    <!-- End Pricing Section -->
 
         <!-- ======= Contact Me Section ======= -->
         <section id="contact" class="contact">
@@ -621,7 +562,7 @@
                             <div class="col-md-12">
                                 <div class="info-box">
                                     <i class="bx bx-share-alt"></i>
-                                    <h3>Social Profiles</h3>
+                                    <h3>Social</h3>
                                     <div class="social-links">
                                         <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
                                         <a href="#" class="github"><i class="icofont-github"></i></a>
@@ -632,15 +573,15 @@
                             <div class="col-md-6">
                                 <div class="info-box mt-4">
                                     <i class="bx bx-envelope"></i>
-                                    <h3>Email Me</h3>
-                                    <p>contact@example.com</p>
+                                    <h3>M'écrire</h3>
+                                    <p>jerome.sauvage@etu.unilim.fr</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="info-box mt-4">
                                     <i class="bx bx-phone-call"></i>
-                                    <h3>Call Me</h3>
-                                    <p>+1 5589 55488 55</p>
+                                    <h3>Skype</h3>
+                                    <p>jerome.sauvage.tic</p>
                                 </div>
                             </div>
                         </div>
@@ -670,9 +611,9 @@
                             <div class="mb-3">
                                 <div class="loading">Loading</div>
                                 <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                                <div class="sent-message">Votre a bien été envoyé. Merci.</div>
                             </div>
-                            <div class="text-center"><button type="submit">Send Message</button></div>
+                            <div class="text-center"><button type="submit">Envoyer</button></div>
                         </form>
                     </div>
 

@@ -1,4 +1,5 @@
 /**
+ * Affiche un titre mot par mot
  * 
  * @param {*} selector 
  */

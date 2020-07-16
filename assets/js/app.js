@@ -14,6 +14,8 @@ import '../vendor/venobox/venobox.css';
 import '../css/style.css';
 
 const $ = require('jquery');
+// create global $ and jQuery variables
+//global.$ = global.jQuery = $;
 
 import '../vendor/jquery.easing/jquery.easing.min.js';
 import '../vendor/waypoints/jquery.waypoints.min.js';
@@ -32,6 +34,6 @@ require('bootstrap');
 
 
 // Need jQuery? Install it with "yarn add jquery", then uncomment to import it.
-// import $ from 'jquery';
+//import $ from 'jquery';
 
 console.log('Hello Webpack Encore! Edit me in assets/js/app.js');

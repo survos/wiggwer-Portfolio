@@ -186,14 +186,6 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Title
 --------------------------------------------------------------*/
-.titleElement {
-    /*opacity: 0;
-    max-width: 320px;
-    font-weight: 300;
-    font-size: 50px;
-    text-transform: uppercase;*/
-}
-
 .titleElement strong {
     font-weight: black;
 }
@@ -509,7 +501,7 @@ section {
 .about .content ul i {
     font-size: 20px;
     padding-right: 2px;
-    color: #ffb727;
+    color: #305032;
 }
 
 .about .content .count-box {
@@ -620,7 +612,7 @@ section {
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #ffb727;
+    color: #305032;
     margin-bottom: 10px;
 }
 
@@ -655,6 +647,19 @@ section {
     top: 0;
     background: #fff;
     border: 2px solid #82909c;
+}
+
+.resume button[type="button"] {
+    background: #305032;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+.resume button[type="button"]:hover {
+    background: #6E9971;
 }
 
 /*--------------------------------------------------------------
@@ -738,17 +743,17 @@ section {
 /*    margin-bottom: 40px;*/
 /*}*/
 
-/*.testimonials .testimonial-item {*/
-/*    text-align: center;*/
-/*    color: #fff;*/
-/*}*/
+/*.testimonials .testimonial-item {
+    text-align: center;
+    color: #fff;
+}*/
 
-/*.testimonials .testimonial-item .testimonial-img {*/
-/*    width: 100px;*/
-/*    border-radius: 50%;*/
-/*    border: 6px solid rgba(255, 255, 255, 0.15);*/
-/*    margin: 0 auto;*/
-/*}*/
+/*.testimonials .testimonial-item .testimonial-img {
+    width: 100px;
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.15);
+    margin: 0 auto;
+}*/
 
 /*.testimonials .testimonial-item h3 {*/
 /*    font-size: 20px;*/
@@ -892,7 +897,7 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
-    color: #ffc041;
+    color: #305032;
 }
 
 .portfolio .portfolio-item .portfolio-info .details-link {
@@ -908,9 +913,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Pricing
+# Tools
 --------------------------------------------------------------*/
-.pricing .box {
+.tool .box {
     padding: 20px;
     background: #fff;
     text-align: center;
@@ -920,7 +925,7 @@ section {
     overflow: hidden;
 }
 
-.pricing h3 {
+.tool h3 {
     font-weight: 400;
     margin: -20px -20px 20px -20px;
     padding: 20px 15px;
@@ -930,7 +935,7 @@ section {
     background: #f8f8f8;
 }
 
-.pricing h4 {
+.tool h4 {
     font-size: 36px;
     color: #ffb727;
     font-weight: 600;
@@ -938,50 +943,50 @@ section {
     margin-bottom: 20px;
 }
 
-.pricing h4 sup {
+.tool h4 sup {
     font-size: 20px;
     top: -12px;
     left: -3px;
 }
 
-.pricing h4 span {
+.tool h4 span {
     color: #bababa;
     font-size: 16px;
     font-weight: 300;
 }
 
-.pricing ul {
+.tool ul {
     padding: 0;
-    list-style: none;
     color: #444444;
     text-align: center;
     line-height: 20px;
     font-size: 14px;
+    list-style-position: inside
 }
 
-.pricing ul li {
+.tool ul li {
     padding-bottom: 16px;
 }
 
-.pricing ul i {
+.tool ul i {
     color: #ffb727;
     font-size: 18px;
     padding-right: 4px;
 }
 
-.pricing ul .na {
+.tool ul .na {
     color: #ccc;
     text-decoration: line-through;
 }
 
-.pricing .btn-wrap {
+.tool .btn-wrap {
     margin: 20px -20px -20px -20px;
     padding: 20px 15px;
     background: #f8f8f8;
     text-align: center;
 }
 
-.pricing .btn-buy {
+.tool .btn-buy {
     background: #ffb727;
     display: inline-block;
     padding: 8px 35px;
@@ -995,16 +1000,16 @@ section {
     transition: 0.3s;
 }
 
-.pricing .btn-buy:hover {
+.tool .btn-buy:hover {
     background: #ffc85a;
 }
 
-.pricing .featured h3 {
+.tool .featured h3 {
     color: #fff;
-    background: #ffb727;
+    background: #305032;
 }
 
-.pricing .advanced {
+.tool .advanced {
     width: 200px;
     position: absolute;
     top: 18px;
@@ -1069,8 +1074,8 @@ section {
 
 .contact .social-links a:hover {
     color: #fff;
-    border-color: #ffb727;
-    background: #ffb727;
+    border-color: #305032;
+    background: #305032;
 }
 
 .contact .php-email-form {
@@ -1143,7 +1148,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-    background: #ffb727;
+    background: #305032;
     border: 0;
     padding: 10px 24px;
     color: #fff;
@@ -1152,7 +1157,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-    background: #ffc85a;
+    background: #6E9971;
 }
 
 @-webkit-keyframes animate-loading {

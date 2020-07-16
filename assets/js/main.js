@@ -1,4 +1,4 @@
-import('jquery');
+
 /**
 * Template Name: Laura - v2.0.0
 * Template URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
@@ -48,6 +48,7 @@ import('jquery');
       }
     }
   });
+
   // Mobile Navigation
   if ($('.nav-menu').length) {
     var $mobile_nav = $('.nav-menu').clone().prop({
@@ -82,6 +83,7 @@ import('jquery');
   } else if ($(".mobile-nav, .mobile-nav-toggle").length) {
     $(".mobile-nav, .mobile-nav-toggle").hide();
   }
+
   // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
@@ -94,6 +96,7 @@ import('jquery');
   if ($(window).scrollTop() > 100) {
     $('#header').addClass('header-scrolled');
   }
+
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
@@ -109,11 +112,13 @@ import('jquery');
     }, 1500, 'easeInOutExpo');
     return false;
   });
+
   // jQuery counterUp
   $('[data-toggle="counter-up"]').counterUp({
     delay: 10,
     time: 1000
   });
+
   // Skills section
   $('.skills-content').waypoint(function() {
     $('.progress .progress-bar').each(function() {
@@ -122,6 +127,7 @@ import('jquery');
   }, {
     offset: '80%'
   });
+
   // Testimonials carousel (uses the Owl Carousel library)
   // $(".testimonials-carousel").owlCarousel({
   //   autoplay: true,
@@ -129,12 +135,13 @@ import('jquery');
   //   loop: true,
   //   items: 1
   // });
+
   // Porfolio isotope and filter
   $(window).on('load', function() {
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item'
     });
-
+    
     $('#portfolio-flters li').on('click', function() {
       $("#portfolio-flters li").removeClass('filter-active');
       $(this).addClass('filter-active');
@@ -150,4 +157,13 @@ import('jquery');
     });
   });
 
-})(jQuery);
+  // Portfolio details carousel
+  $(".portfolio-details-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    items: 1
+  });
+  
+
+});
