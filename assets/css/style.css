@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top i:hover {
-    background: #305032;
+    background: #FFA972;
     color: #fff;
 }
 
@@ -103,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-    color: #305032;
+    color: #FFA972;
     text-decoration: none;
 }
 
@@ -501,7 +501,7 @@ section {
 .about .content ul i {
     font-size: 20px;
     padding-right: 2px;
-    color: #305032;
+    color: #FFA972;
 }
 
 .about .content .count-box {
@@ -511,7 +511,7 @@ section {
 .about .content .count-box i {
     display: block;
     font-size: 36px;
-    color: #ffb727;
+    color: #FFA972;
     float: left;
 }
 
@@ -547,7 +547,7 @@ section {
 }
 
 .about .image {
-    background: url("../images/about_1.jpg") center center no-repeat;
+    background: url("../images/about_2.jpg") center center no-repeat;
     background-size: cover;
     min-height: 500px;
 }
@@ -586,7 +586,7 @@ section {
     width: 1px;
     height: 10px;
     transition: .9s;
-    background-color: #50304E;
+    background-color: #FFA972;
 }
 
 /*--------------------------------------------------------------
@@ -612,7 +612,7 @@ section {
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #305032;
+    color: #FFA972/*#305032*/;
     margin-bottom: 10px;
 }
 
@@ -650,16 +650,21 @@ section {
 }
 
 .resume button[type="button"] {
-    background: #305032;
+    background: #FFA972;
     border: 0;
     padding: 10px 24px;
-    color: #fff;
+    color: #444444;
     transition: 0.4s;
     border-radius: 5px;
 }
 
 .resume button[type="button"]:hover {
-    background: #6E9971;
+    background: #FFD9C1;
+}
+
+.buttonCollapse {
+    margin : auto;
+    padding-top: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -684,7 +689,7 @@ section {
     border-radius: 50%;
     width: 72px;
     height: 72px;
-    background: #6E9971/*#fff4df*/;
+    background: #eef0f2/*#6E9971*//*#fff4df*/;
 }
 
 .competences .icon i {
@@ -845,8 +850,8 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-    color: #305032;
-    border-color: #6E9971;
+    color: #FFA972;
+    border-color: #FFA972;
 }
 
 .portfolio .portfolio-item {
