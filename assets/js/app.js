@@ -11,6 +11,7 @@ import '../vendor/icofont/icofont.min.css';
 import '../vendor/boxicons/css/boxicons.min.css';
 import '../vendor/owl.carousel/assets/owl.carousel.min.css';
 import '../vendor/venobox/venobox.css';
+import '../vendor/aos/aos.css';
 import '../css/style.css';
 
 const $ = require('jquery');
@@ -21,7 +22,10 @@ import '../vendor/counterup/counterup.min.js';
 import '../vendor/owl.carousel/owl.carousel.min.js';
 import '../vendor/isotope-layout/isotope.pkgd.min.js';
 import '../vendor/venobox/venobox.min.js';
+import '../vendor/aos/aos.js';
 import '../js/main.js';
+import '../js/title.js';
+import '../js/loadMore.js';
 
 $(document).ready(function() {
     $('[data-toggle="popover"]').popover();

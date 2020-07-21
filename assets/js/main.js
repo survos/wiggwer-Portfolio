@@ -48,6 +48,7 @@ import('jquery');
       }
     }
   });
+
   // Mobile Navigation
   if ($('.nav-menu').length) {
     var $mobile_nav = $('.nav-menu').clone().prop({
@@ -82,6 +83,7 @@ import('jquery');
   } else if ($(".mobile-nav, .mobile-nav-toggle").length) {
     $(".mobile-nav, .mobile-nav-toggle").hide();
   }
+
   // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
@@ -94,6 +96,7 @@ import('jquery');
   if ($(window).scrollTop() > 100) {
     $('#header').addClass('header-scrolled');
   }
+
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
@@ -109,11 +112,13 @@ import('jquery');
     }, 1500, 'easeInOutExpo');
     return false;
   });
+
   // jQuery counterUp
   $('[data-toggle="counter-up"]').counterUp({
     delay: 10,
     time: 1000
   });
+
   // Skills section
   $('.skills-content').waypoint(function() {
     $('.progress .progress-bar').each(function() {
@@ -122,6 +127,7 @@ import('jquery');
   }, {
     offset: '80%'
   });
+
   // Testimonials carousel (uses the Owl Carousel library)
   // $(".testimonials-carousel").owlCarousel({
   //   autoplay: true,
@@ -129,6 +135,7 @@ import('jquery');
   //   loop: true,
   //   items: 1
   // });
+  
   // Porfolio isotope and filter
   $(window).on('load', function() {
     var portfolioIsotope = $('.portfolio-container').isotope({
@@ -148,6 +155,18 @@ import('jquery');
     $(document).ready(function() {
       $('.venobox').venobox();
     });
+  });
+
+  // Init AOS
+  function aos_init() {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out-back",
+      once: true
+    });
+  }
+  $(window).on('load', function() {
+    aos_init();
   });
 
 })(jQuery);
