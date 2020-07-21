@@ -45,13 +45,13 @@ h1, h2, h3, h4, h5, h6 {
     width: 40px;
     height: 40px;
     border-radius: 4px;
-    background: #303E50;
+    background: #FFA972;
     color: #fff;
     transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-    background: #FFA972;
+    background: #FFD9C1;
     color: #fff;
 }
 
@@ -380,7 +380,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-scroll:hover {
-    color: #ffb727;
+    color: #FFA972;
 }
 
 @media (min-width: 1024px) {
@@ -695,7 +695,7 @@ section {
 .competences .icon i {
     font-size: 36px;
     line-height: 1;
-    color: #305032;
+    color: #FFA972;
 }
 
 .competences .title {
@@ -716,11 +716,11 @@ section {
 }
 
 .competences .icon-box:hover {
-    border-color: #305032;
+    border-color: #FFA972;
 }
 
 .competences .icon-box:hover .title a {
-    color: #305032;
+    color: #FFA972;
 }
 
 /*--------------------------------------------------------------
@@ -1011,7 +1011,7 @@ section {
 
 .tool .featured h3 {
     color: #fff;
-    background: #305032;
+    background: #FFA972;
 }
 
 .tool .advanced {
@@ -1023,9 +1023,70 @@ section {
     z-index: 1;
     font-size: 14px;
     padding: 1px 0 3px 0;
-    background: #ffb727;
+    background: #FFA972;
     color: #fff;
 }
+
+.services .icon-box {
+    margin-bottom: 20px;
+  }
+  
+  .services .icon {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    background: #FFA972;
+    border-radius: 50%;
+    transition: 0.5s;
+    border: 1px solid #FFA972;
+  }
+  
+  .services .icon i {
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .services .icon-box:hover .icon {
+    background: #fff;
+  }
+  
+  .services .icon-box:hover .icon i {
+    color: #FFD9C1;
+  }
+  
+  .services .title {
+    margin-left: 80px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .services .title a {
+    color: #343a40;
+  }
+  
+  .services .title a:hover {
+    color: #149ddd;
+  }
+  
+  .services .description {
+    margin-left: 50px;
+    line-height: 24px;
+    font-size: 14px;
+  }
+
+  [data-aos="my-animation"] {
+    opacity: 1;
+    transition-property: transform, opacity;
+  }
+    
+  [data-aos="my-animation"].aos-animate {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
 
 /*--------------------------------------------------------------
 # Contact Me
@@ -1039,10 +1100,10 @@ section {
 
 .contact .info-box i.bx {
     font-size: 24px;
-    color: #305032;
+    color: #ffffff;
     border-radius: 50%;
     padding: 15px;
-    background: #6E9971;
+    background: #FFA972;
 }
 
 .contact .info-box h3 {
@@ -1079,8 +1140,8 @@ section {
 
 .contact .social-links a:hover {
     color: #fff;
-    border-color: #305032;
-    background: #305032;
+    border-color: #FFA972;
+    background: #FFA972;
 }
 
 .contact .php-email-form {
@@ -1141,7 +1202,7 @@ section {
 }
 
 .contact .php-email-form input::focus, .contact .php-email-form textarea::focus {
-    background-color: #ffb727;
+    background-color: #FFA972;
 }
 
 .contact .php-email-form input {
@@ -1153,7 +1214,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-    background: #305032;
+    background: #FFA972;
     border: 0;
     padding: 10px 24px;
     color: #fff;
@@ -1162,7 +1223,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-    background: #6E9971;
+    background: #FFD9C1;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1234,7 +1295,7 @@ section {
 #footer .social-links a {
     font-size: 18px;
     display: inline-block;
-    background: #305032;
+    background: #FFA972;
     color: #fff;
     line-height: 1;
     padding: 8px 0;
@@ -1247,7 +1308,7 @@ section {
 }
 
 #footer .social-links a:hover {
-    background: #305032;
+    background: #FFD9C1;
     color: #fff;
     text-decoration: none;
 }

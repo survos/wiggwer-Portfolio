@@ -1,3 +1,6 @@
+import('jquery');
+
+!(function($) {
 /**
  * Affiche un titre mot par mot
  * 
@@ -84,3 +87,4 @@ function spanify (element) {
   }
   
   animateTitle('.titleElement')
+})(jQuery);
