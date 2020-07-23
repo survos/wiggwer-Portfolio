@@ -15,23 +15,24 @@ import '../vendor/aos/aos.css';
 import '../css/style.css';
 
 const $ = require('jquery');
+require('bootstrap');
 
 import '../vendor/jquery.easing/jquery.easing.min.js';
 import '../vendor/waypoints/jquery.waypoints.min.js';
 import '../vendor/counterup/counterup.min.js';
 import '../vendor/owl.carousel/owl.carousel.min.js';
-import '../vendor/isotope-layout/isotope.pkgd.min.js';
+import '../vendor/isotope-layout/isotope.pkgd.js';
 import '../vendor/venobox/venobox.min.js';
 import '../vendor/aos/aos.js';
 import '../js/main.js';
 import '../js/title.js';
 import '../js/loadMore.js';
+import '../js/isotope.js';
 
 $(document).ready(function() {
     $('[data-toggle="popover"]').popover();
 });
 
-require('bootstrap');
 
 
 // Need jQuery? Install it with "yarn add jquery", then uncomment to import it.
