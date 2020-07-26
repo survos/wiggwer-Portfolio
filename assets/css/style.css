@@ -1325,11 +1325,13 @@ section {
 # Error
 --------------------------------------------------------------*/
 #error{
-    background: url("../images/error_404.png") center no-repeat;
+    background: url("../images/error_404.jpg") center no-repeat;
      width: 100%;
      height: 100vh;
      background-size: cover;
      position: relative;
+     overflow-x: hidden;
+     overflow-y: hidden;
  }
 
 .error {
