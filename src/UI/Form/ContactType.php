@@ -13,12 +13,12 @@ use Symfony\Component\Form\AbstractType;
 use App\UI\Dto\ContactDto;
 
 /**
- * 
+ *
  */
 class ContactType extends AbstractType
 {
     /**
-     * 
+     *
      */
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
@@ -69,7 +69,7 @@ class ContactType extends AbstractType
      * Undocumented function
      *
      * @param OptionsResolver $resolver
-     * 
+     *
      * @return void
      */
     public function configureOptions(OptionsResolver $resolver)
@@ -89,4 +89,3 @@ class ContactType extends AbstractType
         );
     }
 }
-

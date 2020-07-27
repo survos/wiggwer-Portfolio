@@ -11,13 +11,13 @@ use Twig\Environment;
  */
 class MailHelper
 {
-    /** 
+    /**
      * @var MailerInterface
      */
     protected $mailer;
 
-    /** 
-     * @var Environment 
+    /**
+     * @var Environment
      */
     protected $templating;
 
@@ -43,9 +43,9 @@ class MailHelper
      * @param string $subject
      * @param string $template
      * @param array $paramsTemplate
-     * 
+     *
      * @return void
-     * 
+     *
      */
     public function send(
         array $from,

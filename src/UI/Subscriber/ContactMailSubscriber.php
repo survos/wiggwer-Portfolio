@@ -3,7 +3,7 @@
 namespace App\UI\Subscriber;
 
 use App\UI\Subscriber\AbstractMailSubscriber;
-use App\UI\Event\ContactMailEvent; 
+use App\UI\Event\ContactMailEvent;
 
 /**
  * Class ContactMailSubscriber
@@ -12,7 +12,7 @@ class ContactMailSubscriber extends AbstractMailSubscriber
 {
     /**
      * @codeCoverageIgnore
-     * 
+     *
      * @return array
      */
     public static function getSubscribedEvents()
@@ -26,7 +26,7 @@ class ContactMailSubscriber extends AbstractMailSubscriber
      * Undocumented function
      *
      * @param ContactMailEvent $event
-     * 
+     *
      * @return void
      */
     public function onContactForm(ContactMailEvent $event)
