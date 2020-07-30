@@ -11,17 +11,17 @@ use App\UI\Utils\MailHelper;
  */
 class AbstractMailSubscriber implements EventSubscriberInterface
 {
-    /**
-     * @var array
+    /** 
+     * @var array 
      */
     protected $paramsMailApp;
 
-    /**
-     * @var MailHelper
+    /** 
+     * @var MailHelper 
      */
     protected $mailHelper;
 
-    /**
+    /** 
      * @var TranslatorInterface
      */
     protected $translator;
@@ -45,7 +45,7 @@ class AbstractMailSubscriber implements EventSubscriberInterface
 
     /**
      * @codeCoverageIgnore
-     *
+     * 
      * @return array
      */
     public static function getSubscribedEvents()
