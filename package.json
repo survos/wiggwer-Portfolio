@@ -20,7 +20,6 @@
         "build": "encore production --progress"
     },
     "dependencies": {
-        "aos": "^2.3.4",
         "isotope-layout": "^3.0.6"
     }
 }

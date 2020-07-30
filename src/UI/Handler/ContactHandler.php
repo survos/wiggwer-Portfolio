@@ -12,30 +12,30 @@ use App\UI\Event\ContactMailEvent;
  */
 class ContactHandler
 {
-    /**
-    *  @var EventDispatcherInterface
-    */
-    protected $eventDispatcher;
-
-    /**
-     * ContactHandler constructor.
-     *
-     * @param EventDispatcherInterface $eventDispatcher
+     /**
+     *  @var EventDispatcherInterface 
      */
-    public function __construct(
+     protected $eventDispatcher;
+
+     /**
+      * ContactHandler constructor.
+      *
+      * @param EventDispatcherInterface $eventDispatcher
+      */
+     public function __construct(
          EventDispatcherInterface $eventDispatcher
      ) {
-        $this->eventDispatcher = $eventDispatcher;
-    }
+         $this->eventDispatcher = $eventDispatcher;
+     }
 
-    /**
-     * Undocumented function
-     *
-     * @param FormInterface $form
+     /**
+      * Undocumented function
+      *
+      * @param FormInterface $form
 
-     * @return boolean
-     */
-    public function handle(FormInterface $form): bool
+      * @return boolean
+      */
+     public function handle(FormInterface $form): bool
     {
         if ($form->isSubmitted() && $form->isValid()) {
             $data = $form->getData();

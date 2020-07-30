@@ -21,7 +21,6 @@ import '../vendor/jquery.easing/jquery.easing.min.js';
 import '../vendor/waypoints/jquery.waypoints.min.js';
 import '../vendor/counterup/counterup.min.js';
 import '../vendor/owl.carousel/owl.carousel.min.js';
-import '../vendor/isotope-layout/isotope.pkgd.js';
 import '../vendor/venobox/venobox.min.js';
 import '../vendor/aos/aos.js';
 import '../js/main.js';

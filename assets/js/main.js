@@ -18,15 +18,15 @@ import('jquery');
         var scrollto = target.offset().top;
         var scrolled = 20;
 
-        if ($('#head').length) {
-          scrollto -= $('#head').outerHeight()
+        if ($('#header').length) {
+          scrollto -= $('#header').outerHeight()
 
-          if (!$('#head').hasClass('head-scrolled')) {
+          if (!$('#header').hasClass('header-scrolled')) {
             scrollto += scrolled;
           }
         }
 
-        if ($(this).attr("href") == '#head') {
+        if ($(this).attr("href") == '#header') {
           scrollto = 0;
         }
 
@@ -84,17 +84,17 @@ import('jquery');
     $(".mobile-nav, .mobile-nav-toggle").hide();
   }
 
-  // Toggle .head-scrolled class to #head when page is scrolled
+  // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
-      $('#head').addClass('head-scrolled');
+      $('#header').addClass('header-scrolled');
     } else {
-      $('#head').removeClass('head-scrolled');
+      $('#header').removeClass('header-scrolled');
     }
   });
 
   if ($(window).scrollTop() > 100) {
-    $('#head').addClass('head-scrolled');
+    $('#header').addClass('header-scrolled');
   }
 
   // Back to top button

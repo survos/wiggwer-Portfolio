@@ -22,8 +22,8 @@ use Twig\Error\LoaderError;
  */
 class HomeAction
 {
-    /**
-     * @var FormFactoryInterface
+    /** 
+     * @var FormFactoryInterface 
      */
     protected $formFactory;
 
@@ -36,7 +36,7 @@ class HomeAction
      * Home constructor.
      *
      * @param FormFactoryInterface $formFactory
-     * @param FormHandler          $formHandler
+     * @param ContactHandler $contactHandler
      */
     public function __construct(
         FormFactoryInterface $formFactory,
@@ -70,7 +70,7 @@ class HomeAction
         }
 
         return $viewResponder(
-            'home/home.html.twig',
+           'home/home.html.twig',
             [
               'form' => $form->createView(),
            ]

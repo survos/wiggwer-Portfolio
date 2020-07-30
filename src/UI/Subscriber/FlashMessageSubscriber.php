@@ -12,13 +12,13 @@ use App\UI\Event\FlashMessageEvent;
  */
 class FlashMessageSubscriber implements EventSubscriberInterface
 {
-    /**
-     * @var TranslatorInterface
+    /** 
+     * @var TranslatorInterface 
      */
     protected $translator;
 
-    /**
-     * @var SessionInterface
+    /** 
+     * @var SessionInterface 
      */
     protected $session;
 
