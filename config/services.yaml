@@ -31,3 +31,7 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    email_service:
+        class: App\UI\Handler\ContactHandler
+        arguments: ['@Symfony\Contracts\EventDispatcher\EventDispatcherInterface', '@Symfony\Component\HttpFoundation\Session\Flash\FlashBagInterface']

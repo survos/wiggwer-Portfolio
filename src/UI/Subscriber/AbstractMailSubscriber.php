@@ -3,44 +3,26 @@
 namespace App\UI\Subscriber;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use Symfony\Contracts\Translation\TranslatorInterface;
-use App\UI\Utils\MailHelper;
+//use App\UI\Utils\MailHelper;
 
 /**
  * Class AbstractMailSubscriber
  */
-class AbstractMailSubscriber implements EventSubscriberInterface
+abstract class AbstractMailSubscriber implements EventSubscriberInterface
 {
     /** 
      * @var array 
      */
     protected $paramsMailApp;
 
-    /** 
-     * @var MailHelper 
-     */
-    protected $mailHelper;
-
-    /** 
-     * @var TranslatorInterface
-     */
-    protected $translator;
-
     /**
      * AbstractMailSubscriber constructor.
      *
-     * @param array               $paramsMailApp
-     * @param MailHelper          $mailHelper
-     * @param TranslatorInterface $translator
+     * @param array $paramsMailApp
      */
-    public function __construct(
-        array $paramsMailApp,
-        MailHelper $mailHelper,
-        TranslatorInterface $translator
-    ) {
+    public function __construct(array $paramsMailApp)
+    {
         $this->paramsMailApp = $paramsMailApp;
-        $this->mailHelper = $mailHelper;
-        $this->translator = $translator;
     }
 
     /**

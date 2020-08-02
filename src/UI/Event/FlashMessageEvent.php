@@ -6,6 +6,8 @@ use Symfony\Contracts\EventDispatcher\Event;
 
 /**
  * Class FlashMessageEvent
+ *
+ * @package App\UI\Event
  */
 class FlashMessageEvent extends Event
 {
@@ -24,23 +26,22 @@ class FlashMessageEvent extends Event
     /** 
      * @var bool 
      */
-    protected $translatable;
+    //protected $translatable;
 
     /**
      * FlashMessageEvent constructor.
      *
      * @param string $type
      * @param string $key
-     * @param bool   $translatable
      */
     public function __construct(
         string $type,
-        string $key,
-        bool $translatable = true
+        string $key
+        //bool $translatable = true
     ) {
         $this->type = $type;
         $this->key = $key;
-        $this->translatable = $translatable;
+        //$this->translatable = $translatable;
     }
 
     /**
@@ -59,11 +60,11 @@ class FlashMessageEvent extends Event
         return $this->key;
     }
 
-    /**
-     * @return bool
-     */
-    public function isTranslatable(): bool
-    {
-        return $this->translatable;
-    }
+//    /**
+//     * @return bool
+//     */
+//    public function isTranslatable(): bool
+//    {
+//        return $this->translatable;
+//    }
 }

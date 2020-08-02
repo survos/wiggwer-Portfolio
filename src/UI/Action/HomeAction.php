@@ -46,7 +46,6 @@ class HomeAction
         $this->contactHandler = $contactHandler;
     }
 
-
     /**
      * @param Request $request
      * @param ViewResponder $viewResponder

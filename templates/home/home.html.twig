@@ -1,6 +1,19 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+    {% if app.request.hasPreviousSession %}
+        {% for label, messages in app.flashes(['success', 'warning']) %}
+            {% for message in messages %}
+                {% include("flash_message/_success_flash.html.twig") %}
+            {% endfor %}
+        {% endfor %}
+        {% for label, messages in app.flashes(['error', 'warning']) %}
+            {% for message in messages %}
+                {% include("flash_message/_error_flash.html.twig") %}
+            {% endfor %}
+        {% endfor %}
+    {% endif %}
+
     <!-- ======= Hero Section ======= -->
 
         {% include("hero/hero.html.twig") %}

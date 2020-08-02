@@ -2,13 +2,15 @@
 
 namespace App\UI\Handler;
 
-use Symfony\Component\EventDispatcher\EventDispatcherInterface;
+use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\Form\FormInterface;
 use App\UI\Event\FlashMessageEvent;
 use App\UI\Event\ContactMailEvent;
 
 /**
- * Undocumented class
+ * Class ContactHandler
+ *
+ * @package App\UI\Handler
  */
 class ContactHandler
 {
@@ -22,19 +24,16 @@ class ContactHandler
       *
       * @param EventDispatcherInterface $eventDispatcher
       */
-     public function __construct(
-         EventDispatcherInterface $eventDispatcher
-     ) {
+     public function __construct(EventDispatcherInterface $eventDispatcher)
+     {
          $this->eventDispatcher = $eventDispatcher;
      }
 
-     /**
-      * Undocumented function
-      *
-      * @param FormInterface $form
-
-      * @return boolean
-      */
+    /**
+     * @param FormInterface $form
+     *
+     * @return bool
+     */
      public function handle(FormInterface $form): bool
     {
         if ($form->isSubmitted() && $form->isValid()) {
@@ -43,7 +42,7 @@ class ContactHandler
             $this->eventDispatcher->dispatch(
                 new FlashMessageEvent(
                     'success',
-                    'flash.contact.success'
+                    'Votre message a été envoyé avec succés.'
                 )
             );
 

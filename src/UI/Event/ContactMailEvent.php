@@ -6,13 +6,13 @@ use Symfony\Contracts\EventDispatcher\Event;
 use App\UI\Dto\ContactDto;
 
 /**
- * Undocumented class
+ * Class ContactMailEvent
+ *
+ * @package App\UI\Event
  */
 class ContactMailEvent extends Event
 {
-    const MAIL_CONTACT_EVENT = 'app.mails.contact';
-    
-    /** 
+    /**
      * @var ContactDto
      */
     protected $contact;
