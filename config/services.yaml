@@ -13,8 +13,8 @@ services:
         bind:
             $webRootDir: '%kernel.project_dir%/public'
             $paramsMailApp:
-                name: 'Jérôme Sauvage'
-                email: 'jerome.sauvage@etu.unilim.fr'
+                name: ''
+                email: ''
             $dsn: '%env(resolve:MAILER_DSN)%'
 
     # makes classes in src/ available to be used as services
