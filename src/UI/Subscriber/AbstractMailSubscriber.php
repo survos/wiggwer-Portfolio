@@ -17,8 +17,6 @@ abstract class AbstractMailSubscriber implements EventSubscriberInterface
 
     /**
      * AbstractMailSubscriber constructor.
-     *
-     * @param array $paramsMailApp
      */
     public function __construct(array $paramsMailApp)
     {

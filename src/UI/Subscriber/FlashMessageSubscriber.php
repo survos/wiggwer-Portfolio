@@ -3,6 +3,7 @@
 namespace App\UI\Subscriber;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 //use Symfony\Contracts\Translation\TranslatorInterface;
 use App\UI\Event\FlashMessageEvent;
@@ -19,8 +20,8 @@ class FlashMessageSubscriber implements EventSubscriberInterface
 //     */
 //    protected $translator;
 
-    /** 
-     * @var SessionInterface 
+    /**
+     * @var SessionInterface
      */
     protected $session;
 
@@ -30,9 +31,14 @@ class FlashMessageSubscriber implements EventSubscriberInterface
      * @param SessionInterface    $session
      */
     public function __construct(
-        SessionInterface $session
+        private RequestStack $requestStack
     ) {
-        $this->session = $session;
+    }
+
+    public function getSession(): SessionInterface
+    {
+        return $this->requestStack->getSession();
+
     }
 
     /**
@@ -47,10 +53,7 @@ class FlashMessageSubscriber implements EventSubscriberInterface
         ];
     }
 
-    /**
-     * @param FlashMessageEvent $event
-     */
-    public function onAddFlash(FlashMessageEvent $event)
+    public function onAddFlash(FlashMessageEvent $event): void
     {
         $flashbag = $this->session->getFlashBag();
         $flashbag->add(

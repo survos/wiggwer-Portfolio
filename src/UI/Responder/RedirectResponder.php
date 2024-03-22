@@ -17,8 +17,6 @@ class RedirectResponder
 
     /**
      * RedirectResponder constructor.
-     *
-     * @param UrlGeneratorInterface $urlGenerator
      */
     public function __construct(
         UrlGeneratorInterface $urlGenerator
@@ -29,9 +27,7 @@ class RedirectResponder
     /**
      * Undocumented function
      *
-     * @param string $routeName
-     * @param array $paramsRoute
-     * 
+     *
      * @return void
      */
     public function __invoke(

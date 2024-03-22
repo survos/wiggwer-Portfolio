@@ -11,41 +11,27 @@ class ContactDto
 {
      /**
      * @var string|null
-     *
-     * @Assert\NotBlank(
-     *     message="name.required"
-     * )
      */
+    #[Assert\NotBlank(message: 'name.required')]
     protected $name;
 
     /**
      * @var string|null
-     *
-     * @Assert\NotBlank(
-     *     message="email.required"
-     * )
-     * @Assert\Email(
-     *     message="email.format_invalid"
-     * )
      */
+    #[Assert\NotBlank(message: 'email.required')]
+    #[Assert\Email(message: 'email.format_invalid')]
     protected $email;
 
     /**
      * @var string|null
-     *
-     * @Assert\NotBlank(
-     *     message="subject.required"
-     * )
      */
+    #[Assert\NotBlank(message: 'subject.required')]
     protected $subject;
 
     /**
      * @var string|null
-     *
-     * @Assert\NotBlank(
-     *     message="message.required"
-     * )
      */
+    #[Assert\NotBlank(message: 'message.required')]
     protected $message;
 
     /**

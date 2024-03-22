@@ -21,8 +21,6 @@ class ContactHandler
 
      /**
       * ContactHandler constructor.
-      *
-      * @param EventDispatcherInterface $eventDispatcher
       */
      public function __construct(EventDispatcherInterface $eventDispatcher)
      {
@@ -30,10 +28,8 @@ class ContactHandler
      }
 
     /**
-     * @param FormInterface $form
-     *
-     * @return bool
-     */
+      * @return bool
+      */
      public function handle(FormInterface $form): bool
     {
         if ($form->isSubmitted() && $form->isValid()) {

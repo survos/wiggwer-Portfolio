@@ -14,14 +14,11 @@ use Twig\Error\LoaderError;
  * Class MentionAction
  *
  * @package App\UI\Action
- *
- * @Route("/mention", name="mention", methods={"GET"})
  */
+#[Route(path: '/mention', name: 'mention', methods: ['GET'])]
 class MentionAction
 {
     /**
-     * @param Request $request
-     * @param ViewResponder $viewResponder
      *
      * @return Response
      *

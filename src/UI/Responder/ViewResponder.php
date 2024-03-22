@@ -22,8 +22,6 @@ class ViewResponder
 
     /**
      * ViewResponder constructor.
-     *
-     * @param Environment $twig
      */
     public function __construct(Environment $twig)
     {
@@ -31,8 +29,6 @@ class ViewResponder
     }
 
     /**
-     * @param string $template
-     * @param array $params
      *
      * @return Response
      *

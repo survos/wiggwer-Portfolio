@@ -17,13 +17,12 @@ use Twig\Error\LoaderError;
  * Class HomeAction
  *
  * @package App\UI\Action
- *
- * @Route("/", name="home")
  */
+#[Route(path: '/home', name: 'home')]
 class HomeAction
 {
-    /** 
-     * @var FormFactoryInterface 
+    /**
+     * @var FormFactoryInterface
      */
     protected $formFactory;
 
@@ -34,9 +33,6 @@ class HomeAction
 
     /**
      * Home constructor.
-     *
-     * @param FormFactoryInterface $formFactory
-     * @param ContactHandler $contactHandler
      */
     public function __construct(
         FormFactoryInterface $formFactory,
@@ -47,8 +43,6 @@ class HomeAction
     }
 
     /**
-     * @param Request $request
-     * @param ViewResponder $viewResponder
      *
      * @return mixed
      *

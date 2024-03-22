@@ -28,9 +28,7 @@ class ContactType extends AbstractType
                 TextType::class,
                 [
                 'label' => 'votre nom :',
-                'attr' => array(
-                   'placeholder' => 'Votre nom ',
-                ),
+                'attr' => ['placeholder' => 'Votre nom '],
                 ]
             )
             ->add(
@@ -38,9 +36,7 @@ class ContactType extends AbstractType
                 EmailType::class,
                 [
                 'label' => 'votre email :',
-                'attr' => array(
-                   'placeholder' => 'Votre email ',
-                ),
+                'attr' => ['placeholder' => 'Votre email '],
                 ]
             )
             ->add(
@@ -48,9 +44,7 @@ class ContactType extends AbstractType
                 TextType::class,
                 [
                 'label' => 'Sujet :',
-                'attr' => array(
-                   'placeholder' => 'Indiquez un sujet ',
-                ),
+                'attr' => ['placeholder' => 'Indiquez un sujet '],
                 ]
             )
             ->add(
@@ -58,9 +52,7 @@ class ContactType extends AbstractType
                 TextareaType::class,
                 [
                 'label' => 'votre message :',
-                'attr' => array(
-                   'placeholder' => 'Ecrivez votre message',
-                ),
+                'attr' => ['placeholder' => 'Ecrivez votre message'],
                 ]
             );
     }
@@ -72,19 +64,17 @@ class ContactType extends AbstractType
      * 
      * @return void
      */
-    public function configureOptions(OptionsResolver $resolver)
+    public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults(
             [
                 'data_class' => ContactDTO::class,
-                'empty_data' => function (FormInterface $form) {
-                    return new ContactDTO(
-                        $form->get('name')->getData(),
-                        $form->get('email')->getData(),
-                        $form->get('subject')->getData(),
-                        $form->get('message')->getData()
-                    );
-                },
+                'empty_data' => fn(FormInterface $form) => new ContactDTO(
+                    $form->get('name')->getData(),
+                    $form->get('email')->getData(),
+                    $form->get('subject')->getData(),
+                    $form->get('message')->getData()
+                ),
             ]
         );
     }

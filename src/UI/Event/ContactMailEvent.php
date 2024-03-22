@@ -19,8 +19,6 @@ class ContactMailEvent extends Event
 
     /**
      * ContactMailEvent constructor.
-     *
-     * @param ContactDto $contact
      */
     public function __construct(
         ContactDto $contact

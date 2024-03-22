@@ -25,11 +25,6 @@ use function is_null;
 class ContactMailSubscriber extends AbstractMailSubscriber
 {
     /**
-     * @var string
-     */
-    private $dsn;
-
-    /**
      * @var Environment
      */
     protected $templating;
@@ -41,9 +36,8 @@ class ContactMailSubscriber extends AbstractMailSubscriber
      * @param Environment $templating
      * @param array $paramsMailApp
      */
-    public function __construct(string $dsn, Environment $templating, array $paramsMailApp)
+    public function __construct(private string $dsn='', ?Environment $templating=null, array $paramsMailApp=[])
     {
-        $this->dsn = $dsn;
         $this->templating = $templating;
         parent::__construct($paramsMailApp);
     }
@@ -61,14 +55,13 @@ class ContactMailSubscriber extends AbstractMailSubscriber
     }
 
     /**
-     * @param ContactMailEvent $event
      *
      * @throws TransportExceptionInterface
      * @throws LoaderError
      * @throws RuntimeError
      * @throws SyntaxError
      */
-    public function onContactForm(ContactMailEvent $event)
+    public function onContactForm(ContactMailEvent $event): void
     {
         $email = (new Email())
             ->from(new Address($event->getContact()->getEmail(),

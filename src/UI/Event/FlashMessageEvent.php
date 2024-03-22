@@ -11,7 +11,7 @@ use Symfony\Contracts\EventDispatcher\Event;
  */
 class FlashMessageEvent extends Event
 {
-    const FLASH_MESSAGE = 'app.flash_message';
+    public const FLASH_MESSAGE = 'app.flash_message';
 
     /** 
      * @var string 
@@ -27,12 +27,8 @@ class FlashMessageEvent extends Event
      * @var bool 
      */
     //protected $translatable;
-
     /**
      * FlashMessageEvent constructor.
-     *
-     * @param string $type
-     * @param string $key
      */
     public function __construct(
         string $type,
